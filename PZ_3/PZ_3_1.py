@@ -4,7 +4,7 @@
 try:
     A = int(input("Введите число: "))
 except ValueError:
-    print("Что-то пошло не так. Повторите попытку.")
+    print("Что-то пошло не так. Повторите попыткy.")
 if A % 2 == 0:
     print(True)
 else:
