@@ -6,8 +6,9 @@ try:
 except ValueError:
     print("Ошибка ввода: введите целое число в нанометрах.")
 
-
-if wave_length <= 449:
+if wave_length < 380 or wave_length > 780:
+    print("Значение вне видимого спектра.")
+elif wave_length <= 449:
     print("Цвет волны фиолетовый.")
 elif wave_length <= 479:
     print("Цвет волны синий.")
