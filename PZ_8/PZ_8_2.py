@@ -13,11 +13,6 @@ def sum_halves(d):
     print("Сумма второй половины:", sum2)
 
 
-slovarik = {
-    "a": 52,
-    "chetverg": 100,
-    "python": 13,
-    "end": 27
-}
+slovarik = {"a": 52, "chetverg": 100, "python": 13, "end": 27}
 
 sum_halves(slovarik)
