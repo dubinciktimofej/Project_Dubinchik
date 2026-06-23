@@ -3,3 +3,25 @@
 #количество символов, принадлежащих к группе букв. Сформировать новый файл, в
 #который поместить текст в стихотворной форме предварительно заменив символы верхнего
 #регистра на нижний.
+f = open('text18-4.txt', 'r', encoding='utf-16')
+text = f.read()
+f.close()
+
+print(text)
+
+count = 0
+
+for x in text:
+    if x in 'абвгдежзийклмнопрстуфхцчшщъыьэюяАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ':
+        count = count + 1
+
+print('Количество букв:', count)
+
+text2 = text.lower()
+
+f = open('result.txt', 'w', encoding='utf-16')
+
+for line in text2.split('\n'):
+    f.write(line + '\n')
+
+f.close()
